@@ -18,8 +18,6 @@ Lightweight &amp; Secure VestaCP
 10. automatically make backup and upload it to your dropbox every week (you need dropbox api access, but its free)
 
 
-
-
 ## Here's the recommendation for 3rd party services:
 (For DNS Hosting)
 Hurricane Electric Hosted DNS
@@ -35,3 +33,8 @@ PawnMail
 Inbox.eu
 Yandex
 Mail.ru
+
+## How to install:
+```bash
+curl -O https://raw.githubusercontent.com/erikdemarco/VestaCP-Improved/master/vesta_improved.sh && bash vesta_improved.sh
+```
