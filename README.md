@@ -37,4 +37,6 @@ Mail.ru
 ## How to install:
 ```bash
 curl -O https://raw.githubusercontent.com/erikdemarco/VestaCP-Improved/master/vesta_improved.sh && bash vesta_improved.sh
-```
+```  
+  
+ Recommended OS: CentOS7
