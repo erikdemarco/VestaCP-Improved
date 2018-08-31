@@ -13,7 +13,7 @@ if [ $vAddSsh == "y" ] || [ $vAddSsh == "Y" ]; then
   read -r -p "Please input your public SSH Key: " vSshKey
 fi
 
-read -r -p "Do you want to make admin panel, mysql accesible to localhost only (you can still access admin panel using SSH tunnel)? [y/N] " vProtectAdminPanel
+read -r -p "Do you want to make admin panel, mysql, and phpmyadmin accesible to localhost only (you can still access admin panel using SSH tunnel)? [y/N] " vProtectAdminPanel
 
 read -r -p "Do you want to automated backup to dropbox weekly? (needs dropbox access token) [y/N] " vDropboxUploader
 if [ $vDropboxUploader == "y" ] || [ $vDropboxUploader == "Y" ]; then
@@ -229,7 +229,7 @@ if [ $vDropboxUploader == "y" ] || [ $vDropboxUploader == "Y" ]; then
   echo $vDropboxUploaderKey | ./dropbox_uploader.sh
 
   #download the cron file
-  curl -O https://gist.githubusercontent.com/erikdemarco/959e3afc29122634631e59d3e3640333/raw/fb132e0c06a10ced6513454e9304e99a2d7c0c55/dropbox_auto_backup_cron.sh
+  curl -O https://raw.githubusercontent.com/erikdemarco/VestaCP-Improved/master/dropbox_auto_backup_cron.sh
 
   #move the cron file for accessiblity
   mv dropbox_auto_backup_cron.sh /usr/local/bin/
