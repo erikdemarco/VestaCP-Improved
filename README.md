@@ -2,9 +2,9 @@
 Lightweight &amp; Secure VestaCP
 
 ## What This installer do is:
-1. Installs VestaCP with: Apache, MariaDB, Remi repository, iptables + Fail2ban
--) no dns (use 3rd party dns hosting such as cloudflare to hide your server ip),
--) no mail (use 3rd party mail hosting, to hide your server ip), ,
+1. Installs VestaCP with: Apache, MariaDB, Remi repository, iptables + Fail2ban  
+-) no dns (use 3rd party dns hosting such as cloudflare to hide your server ip)  
+-) no mail (use 3rd party mail hosting, to hide your server ip)  
 -) no ftp but we use SFTP so its much more safer,
 -) no nginx (i know a lot of people will ask why, for me too much software will increase bug and error level on the server so i tend to use as few software as possible, and I will set cloudflare as my cache server as the 1st layer)
 2. Install monit (to make sure all service auto restart after crash) I dont know why vestacp doesnt include monit as built in package (they even already have the setting for monit here: http://c.vestacp.com/rhel/7/monit/)
