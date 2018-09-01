@@ -15,7 +15,7 @@ Lightweight &amp; Secure VestaCP
 7. Disable only the most dangerous php functions like exec,system,passthru,shell_exec,proc_open,popen
 8. Disable admin shell (never host a site as admin, its safer to create a user to host your sites)
 9. make admin panel, phpmyadmin, mysql only accessible via localhost (you can still access all of this feature by using ssh tunnel its much more safer this way)
-10. automatically make backup and upload it to your dropbox every week (you need dropbox api access, but its free)
+10. automatically make backup and upload it to your dropbox every week (you need dropbox api access, but its free). And the great things about this, this will only store the newest version and delete the old one automatically (both on your server and dropbox), no manual maintenance needed from you.
   
   
 ## Here's the recommendation for 3rd party services:
