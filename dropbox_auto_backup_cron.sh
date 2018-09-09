@@ -35,7 +35,7 @@ for X in "$BACKUP_FOLDER"*$DATE*; do
     rm -rf "$BACKUP_FOLDER$NEW_NAME"
         
     #Delete the backup using api (so the counter is updated in panel)
-    v-delete-user-backup $USER_NAME $NAME_NO_PATH
+    /usr/local/vesta/bin/v-delete-user-backup $USER_NAME $NAME_NO_PATH
 
 done
 
