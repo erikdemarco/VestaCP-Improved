@@ -11,7 +11,7 @@ Lightweight &amp; Secure VestaCP
 2. Install monit (to make sure all service auto restart after crash) I dont know why vestacp doesnt include monit as built in package (they even already have the setting for monit here: http://c.vestacp.com/rhel/7/monit/)
 3. update php & mariadb to the latest stable version
 4. optimize php and disable dangerous functions
-5. install ssh key (for additional protection please enable this, and it will only allow ssh login from ssh key, and will disable login using password, to protect you from bruteforce) You know even when you just created an instance on DO/Vultr/OVH, the first time you login into ssh, sometime it already have 'xxx failed login' GEEZ. so this is a must.
+5. install ssh key (for additional protection please enable this, and it will only allow ssh login from ssh key, and will disable login using password, to protect you from bruteforce) You know even when you just created an instance on DO/Vultr/OVH, the first time you login into ssh, sometimes it already have '9000+ failed login'. so this is a must.
 6. optimize httpd including the server's max process (maxclients) based on server specs (vestacp default setting is out of mind, it is set to 200, for static content its ok but for dynamic content its crazy. lets say each process need 50 mb for wordpress the average need 80mb, so 50mb x 200 = 10G. server with 10G will also crash with this setting because theres not enough memory for other process)
 7. Disable admin ssh access to nologin (never host a site as admin, its safer to create a user to host your sites)
 8. make admin panel, phpmyadmin, mysql only accessible via localhost (you can still access all of this feature by using ssh tunnel its much more safer this way)
