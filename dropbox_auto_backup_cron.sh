@@ -33,9 +33,12 @@ for X in "$BACKUP_FOLDER"*$DATE*; do
     
     #delete uploaded data
     rm -rf "$BACKUP_FOLDER$NEW_NAME"
+    
+    #fixing the problem that will exist
+    export VESTA=/usr/local/vesta/
         
     #Delete the backup using api (so the counter is updated in panel)
-    /usr/local/vesta/bin/v-delete-user-backup $USER_NAME $NAME_NO_PATH
+    sudo /usr/local/vesta/bin/v-delete-user-backup $USER_NAME $NAME_NO_PATH
 
 done
 
